@@ -28,7 +28,7 @@ This project is a smart solution aimed at optimizing energy consumption in class
 # Setting Up the Environment
 1.	Install Required Packages:
     <br>
-    Run the following commands in your terminal or command prompt to install dependencies
+        •       Run the following commands in your terminal or command prompt to install dependencies
   	<br>
     Command : pip install pyserial ultralytics opencv-python-headless numpy
 
