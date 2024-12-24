@@ -27,21 +27,22 @@ This project is a smart solution aimed at optimizing energy consumption in class
 
 # Setting Up the Environment
 1.	Install Required Packages:
+    <br>
     Run the following commands in your terminal or command prompt to install dependencies
   	<br>
     Command : pip install pyserial ultralytics opencv-python-headless numpy
 
-3.	Connect the Arduino:
+2.	Connect the Arduino:
 	•	Ensure your Arduino is connected via USB.
 	•	Replace '/dev/cu.usbserial-120' in the code with the appropriate port for your 
       Arduino (e.g., COM3 for Windows).
 
-4.	Prepare the YOLO Model:
+3.	Prepare the YOLO Model:
 	•	Ensure you have the YOLOv8 model file (yolov8n.pt).
                 <br>
                 Download it from the Ultralytics 
   	
-6.	Configure the Code:
+4.	Configure the Code:
 	•	Update the path to your YOLO model in the line
                 <br>
                 Command : model = YOLO("yolov8n.pt")
@@ -53,33 +54,40 @@ This project is a smart solution aimed at optimizing energy consumption in class
    Command : python /path/to/people_count.py
 
 3.	Control the Camera:
+        <br>
 	•	The script will start your default webcam.
         <br>
 	•	Ensure the camera is functional and the area being monitored is visible.
 
-4.	Interacting with Arduino:
+5.	Interacting with Arduino:
+	<br>
 	•	The code sends the smoothed count of people detected in the frame to the Arduino via 
                 serial communication.
   	<br>
 	•	The Arduino can then use this data to control appliances (modify your Arduino sketch 
                 to respond accordingly).
 
-6. Key Features in the Code:
+7. Key Features in the Code:
+        <br>
 	•	Object Detection:
+        <br>
 	•	Detects “person” objects using YOLOv8.
         <br>
 	•	Filters detections to count people in the frame.
         <br>
 	•	Smoothing:
+        <br>
 	•	Averages the count over the last 10 frames to reduce noise.
         <br>
 	•	Arduino Communication:
+        <br>
 	•	Sends the smoothed count to Arduino using serial communication.
         <br>
 	•	Real-Time Display:
+        <br>
 	•	Displays the video feed with bounding boxes for detected persons and the people count.
 
-8. Stopping the Script:
+9. Stopping the Script:
 	•	Press the q key to stop the program.
         <br>
 	•	It will release the camera resources and close the Arduino serial connection.
