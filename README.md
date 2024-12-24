@@ -40,11 +40,13 @@ This project is a smart solution aimed at optimizing energy consumption in class
                 Arduino (e.g., COM3 for Windows).
 
 3.	Prepare the YOLO Model:
+        <br>
 	•	Ensure you have the YOLOv8 model file (yolov8n.pt).
                 <br>
                 Download it from the Ultralytics 
   	
-4.	Configure the Code:
+5.	Configure the Code:
+        <br>
 	•	Update the path to your YOLO model in the line
                 <br>
                 Command : model = YOLO("yolov8n.pt")
@@ -53,7 +55,7 @@ This project is a smart solution aimed at optimizing energy consumption in class
 1. Start the Script:
    <br>
    Execute the script in your terminal:
-  	<br>
+   <br>
    Command : python /path/to/people_count.py
 
 2. Control the Camera:
@@ -62,7 +64,7 @@ This project is a smart solution aimed at optimizing energy consumption in class
         <br>
 	•	Ensure the camera is functional and the area being monitored is visible.
 
-3.Interacting with Arduino:
+3. Interacting with Arduino:
 	<br>
 	•	The code sends the smoothed count of people detected in the frame to the Arduino via 
                 serial communication.
