@@ -51,6 +51,7 @@ This project is a smart solution aimed at optimizing energy consumption in class
 
 ## Running the Code
 1.	Start the Script:
+   <br>
    Execute the script in your terminal:
   	<br>
    Command : python /path/to/people_count.py
@@ -89,7 +90,7 @@ This project is a smart solution aimed at optimizing energy consumption in class
         <br>
 	•	Displays the video feed with bounding boxes for detected persons and the people count.
 
-9. Stopping the Script:
+5. Stopping the Script:
 	•	Press the q key to stop the program.
         <br>
 	•	It will release the camera resources and close the Arduino serial connection.
