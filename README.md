@@ -13,14 +13,14 @@ This project is a smart solution aimed at optimizing energy consumption in class
    <br>
    •	Communication Protocol: Serial communication between Python and Arduino.
 
-# Hardware:
+## Hardware:
    •	A computer with a working webcam.
    <br>
    •	An Arduino connected to your computer.
    <br>
    •	Electric appliances connected to Arduino for control (optional).
    
-# Software:
+## Software:
    •	Python installed on your computer.
    <br>
    •	Required Python packages: serial, ultralytics, cv2, numpy.
