@@ -50,19 +50,19 @@ This project is a smart solution aimed at optimizing energy consumption in class
                 Command : model = YOLO("yolov8n.pt")
 
 ## Running the Code
-1.	Start the Script:
+1. Start the Script:
    <br>
    Execute the script in your terminal:
   	<br>
    Command : python /path/to/people_count.py
 
-2.	Control the Camera:
+2. Control the Camera:
         <br>
 	•	The script will start your default webcam.
         <br>
 	•	Ensure the camera is functional and the area being monitored is visible.
 
-3.	Interacting with Arduino:
+3.Interacting with Arduino:
 	<br>
 	•	The code sends the smoothed count of people detected in the frame to the Arduino via 
                 serial communication.
