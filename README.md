@@ -5,7 +5,7 @@ This project is a smart solution aimed at optimizing energy consumption in class
 
 # Technologies Used:
 
-   •	<p style="color: green;">Computer Vision</p>: YOLOv8 for object detection.
+   •	<p style="color: red;">Computer Vision</p>: YOLOv8 for object detection.
    <br>
    •	Microcontroller: Arduino for appliance control.
    <br>
