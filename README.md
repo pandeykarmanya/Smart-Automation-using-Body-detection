@@ -5,16 +5,17 @@ This project is a smart solution aimed at optimizing energy consumption in class
 
 # Technologies Used:
 
-	•	Computer Vision: YOLOv8 for object detection.
-	•	Microcontroller: Arduino for appliance control.
-	•	Programming Languages: Python for the detection system and Arduino IDE for microcontroller programming.
-	•	Communication Protocol: Serial communication between Python and Arduino.
+   •	Computer Vision: YOLOv8 for object detection.
+   •	Microcontroller: Arduino for appliance control.
+   •	Programming Languages: Python for the detection system and Arduino IDE for microcontroller programming.
+   •	Communication Protocol: Serial communication between Python and Arduino.
 
 # Hardware:
-	•	A computer with a working webcam.
-	•	An Arduino connected to your computer.
-	•	Electric appliances connected to Arduino for control (optional).
+   •	A computer with a working webcam.
+   •	An Arduino connected to your computer.
+   •	Electric appliances connected to Arduino for control (optional).
+   
 # Software:
-	•	Python installed on your computer.
-	•	Required Python packages: serial, ultralytics, cv2, numpy.
+   •	Python installed on your computer.
+   •	Required Python packages: serial, ultralytics, cv2, numpy.
 
