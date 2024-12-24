@@ -33,9 +33,11 @@ This project is a smart solution aimed at optimizing energy consumption in class
     Command : pip install pyserial ultralytics opencv-python-headless numpy
 
 2.	Connect the Arduino:
+	<br>
 	•	Ensure your Arduino is connected via USB.
+        <br>
 	•	Replace '/dev/cu.usbserial-120' in the code with the appropriate port for your 
-      Arduino (e.g., COM3 for Windows).
+                Arduino (e.g., COM3 for Windows).
 
 3.	Prepare the YOLO Model:
 	•	Ensure you have the YOLOv8 model file (yolov8n.pt).
@@ -53,13 +55,13 @@ This project is a smart solution aimed at optimizing energy consumption in class
   	<br>
    Command : python /path/to/people_count.py
 
-3.	Control the Camera:
+2.	Control the Camera:
         <br>
 	•	The script will start your default webcam.
         <br>
 	•	Ensure the camera is functional and the area being monitored is visible.
 
-5.	Interacting with Arduino:
+3.	Interacting with Arduino:
 	<br>
 	•	The code sends the smoothed count of people detected in the frame to the Arduino via 
                 serial communication.
@@ -67,23 +69,23 @@ This project is a smart solution aimed at optimizing energy consumption in class
 	•	The Arduino can then use this data to control appliances (modify your Arduino sketch 
                 to respond accordingly).
 
-7. Key Features in the Code:
+4. Key Features in the Code:
         <br>
-	•	Object Detection:
+   Object Detection:
         <br>
 	•	Detects “person” objects using YOLOv8.
         <br>
 	•	Filters detections to count people in the frame.
         <br>
-	•	Smoothing:
+   Smoothing:
         <br>
 	•	Averages the count over the last 10 frames to reduce noise.
         <br>
-	•	Arduino Communication:
+   Arduino Communication:
         <br>
 	•	Sends the smoothed count to Arduino using serial communication.
         <br>
-	•	Real-Time Display:
+   Real-Time Display:
         <br>
 	•	Displays the video feed with bounding boxes for detected persons and the people count.
 
