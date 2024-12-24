@@ -27,50 +27,61 @@ This project is a smart solution aimed at optimizing energy consumption in class
 
 # Setting Up the Environment
 1.	Install Required Packages:
-    Run the following commands in your terminal or command prompt to install dependencies:
-    pip install pyserial ultralytics opencv-python-headless numpy
+    Run the following commands in your terminal or command prompt to install dependencies
+  	<br>
+    Command : pip install pyserial ultralytics opencv-python-headless numpy
 
-2.	Connect the Arduino:
+3.	Connect the Arduino:
 	•	Ensure your Arduino is connected via USB.
 	•	Replace '/dev/cu.usbserial-120' in the code with the appropriate port for your 
       Arduino (e.g., COM3 for Windows).
 
-3.	Prepare the YOLO Model:
-	•	Ensure you have the YOLOv8 model file (yolov8n.pt). Download it from the Ultralytics 
-      GitHub repository if you don’t already have it.
+4.	Prepare the YOLO Model:
+	•	Ensure you have the YOLOv8 model file (yolov8n.pt).
+                <br>
+                Download it from the Ultralytics 
   	
-5.	Configure the Code:
-	•	Update the path to your YOLO model in the line:
-      model = YOLO("yolov8n.pt")
+6.	Configure the Code:
+	•	Update the path to your YOLO model in the line
+                <br>
+                Command : model = YOLO("yolov8n.pt")
 
 ## Running the Code
 1.	Start the Script:
    Execute the script in your terminal:
-   python /path/to/people_count.py
+  	<br>
+   Command : python /path/to/people_count.py
 
-2.	Control the Camera:
+3.	Control the Camera:
 	•	The script will start your default webcam.
+        <br>
 	•	Ensure the camera is functional and the area being monitored is visible.
 
-3.	Interacting with Arduino:
+4.	Interacting with Arduino:
 	•	The code sends the smoothed count of people detected in the frame to the Arduino via 
-      serial communication.
+                serial communication.
+  	<br>
 	•	The Arduino can then use this data to control appliances (modify your Arduino sketch 
-      to respond accordingly).
+                to respond accordingly).
 
-4. Key Features in the Code:
+6. Key Features in the Code:
 	•	Object Detection:
 	•	Detects “person” objects using YOLOv8.
+        <br>
 	•	Filters detections to count people in the frame.
+        <br>
 	•	Smoothing:
 	•	Averages the count over the last 10 frames to reduce noise.
+        <br>
 	•	Arduino Communication:
 	•	Sends the smoothed count to Arduino using serial communication.
+        <br>
 	•	Real-Time Display:
 	•	Displays the video feed with bounding boxes for detected persons and the people count.
 
-5. Stopping the Script:
+8. Stopping the Script:
 	•	Press the q key to stop the program.
+        <br>
 	•	It will release the camera resources and close the Arduino serial connection.
 
 
