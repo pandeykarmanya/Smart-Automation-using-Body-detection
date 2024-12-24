@@ -22,6 +22,9 @@ This project is a smart solution aimed at optimizing energy consumption in class
 •	Python installed on your computer.
 <br>
 •	Required Python packages: serial, ultralytics, cv2, numpy
+
+# Workflow
+![Smart Automation System](Image/Workflow.png)
  
  # Setting Up the Environment
  
